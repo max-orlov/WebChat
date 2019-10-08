@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация нового пользователя</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <h1><em>Регистрация нового пользователя</em></h1>
+
+    <form method="POST" enctype="multipart/form-data" action="userImg">
+        <input autofocus type="text" id="user_name" name="name"><label>Логин</label><br>
+        <input type="text" id="FIO" name="FIO"><label>Ф.И.О</label><br>
+        <input type="text" id="tel" name="tel"><label>Телефон</label><br>
+        <input type="email" id="e-mail" name="e_mail" placeholder="e-mail"><label>Электронная почта</label><br>
+        <input type="text" id="password" name="password" placeholder="Пароль"><label>Пароль</label><br>
+        Добавьте фото <input type="file" name="upfile" accept="image/*" required><br/>
+        <input type="submit" value="Нажмите"> Чтобы сохранить
+    </form>
+
+    <script src="new_user.js"></script>
+</body>
+</html>
