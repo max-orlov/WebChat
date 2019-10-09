@@ -50,7 +50,6 @@ public class MessageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if(req.getHeader("Accept").equals("text/event-stream")){
-            //req.setAttribute("org.apache.catalina.ASYNC_SUPPORTED", true);
 
             resp.setContentType("text/event-stream");
             resp.setHeader("Connection", "keep-alive");
