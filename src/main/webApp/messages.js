@@ -1,5 +1,7 @@
 function sendMessage() {
-    var text = $('#new_message').val();
+    var text = $('#new_message').val().replace(/&/g, '&amp;').replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
     var userId = $.cookie("userId");
 
     $.ajax({
